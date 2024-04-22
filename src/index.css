@@ -1,13 +1,47 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+*{
+  background-color: #fff;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper{
+  width: 1280px;
+  margin: 50px auto;
+}
+
+header .logo{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+header .presentation{
+  margin: 50px auto;
+  background: url('./img/header\(presentation\).jpg');
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header ul.nav{
+  float: right;
+  list-style: none;
+}
+
+header ul.nav li{
+  display: inline;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: opacity 500ms ease;
+}
+
+header ul.nav li:hover{
+  opacity: 0,5;
 }
