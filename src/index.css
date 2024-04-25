@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
 *{
-  color: #222;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
@@ -11,6 +10,10 @@
 .wrapper{
   width: 1280px;
   margin: 50px auto;
+}
+
+header{
+  position: relative;
 }
 
 header .logo{
@@ -42,6 +45,94 @@ header ul.nav li{
 
 header ul.nav li:hover{
   opacity: 0,5;
+}
+
+header .shop-cart-button{
+  float: right;
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+header .shop-cart-button:hover{
+  transform: scale(1.5);
+}
+
+header .shop-cart{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 450px;
+  background-color: #fafafa;
+  box-shadow: 4px 5px 15px -7px #606060;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+header .shop-cart .item{
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+header .shop-cart .item img{
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+header .shop-cart .item h2{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+header .shop-cart .item p{
+  color: #797979;
+  font-weight: 600;
+}
+
+header .shop-cart .empty{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+header .shop-cart .item .delete-icon{
+  color: #ca5252;
+  
+  float: right;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+header .shop-cart .item .delete-icon:hover{
+  transform: scale(1.5);
+  color: #f70202;
+}
+
+header .shop-cart .amount{
+  float: left;
+  width: 100%;
+  font-weight: 600;  
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.categories div{
+  display: inline-block;
+  background-color: #f2f2f2;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+}
+
+.categories div:hover{
+  border-color: silver;
+  transform: scale(1.1);
 }
 
 main{
